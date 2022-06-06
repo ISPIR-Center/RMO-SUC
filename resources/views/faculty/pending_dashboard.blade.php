@@ -99,7 +99,7 @@
                             <td>{{ $proposal->station }}</td>
                             <td>{{ $proposal->location_to }} </td>
                             <td>{{ $proposal->date_completed }}</td>
-                            @if ($proposal->is_presented =="1" and $proposal->is_published =="0" and $proposal->status =="APPROVED")
+                            {{-- @if ($proposal->is_presented =="1" and $proposal->is_published =="0" and $proposal->status =="APPROVED")
                             <td><span class="badge status-ongoing">PRESENTED</span></td>
                             @elseif ($proposal->is_published =="1" and $proposal->is_presented =="0" and $proposal->status =="APPROVED")
                             <td><span class="badge status-compliant">PUBLISHED</span></td>
@@ -115,7 +115,7 @@
                             <td><span class="badge status-pending">PENDING</span></td>
                             @else
                             <td><span class="badge status-inprogress">{{ $proposal->status }}</span></td>
-                            @endif
+                            @endif --}}
                         </tr>
                       @endforeach
                     @else

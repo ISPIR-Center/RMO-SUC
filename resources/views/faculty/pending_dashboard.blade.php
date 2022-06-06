@@ -85,7 +85,7 @@
                       <th scope="col" width="9%">Station</th>
                       <th scope="col" width="15%">Responsible Person</th>
                       <th scope="col" width="10%">Date Completed</th>
-                      <th scope="col" width="9%">Status/Rejected by</th>
+                      {{-- <th scope="col" width="9%">Status/Rejected by</th> --}}
                     </tr>
                   </thead>
                   <tbody>

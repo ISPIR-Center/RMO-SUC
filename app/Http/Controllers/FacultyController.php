@@ -207,7 +207,7 @@ class FacultyController extends Controller
         public function deleteResearchMember($proposal, $member){
 
             ResearchMember::where('proposal_id', $proposal)
-                            ->where('user_id', $member)->delete();
+                            ->where('user_id', $member)->delete;
             return back()->with('delete', ' Member Removed');
         }
 
@@ -1523,7 +1523,7 @@ class FacultyController extends Controller
             $request->fileInputMoa->move(public_path('requirements'), $moa);
             $bus = date('Y-m-h') . $request->fileInputBP->getClientOriginalName() . 'new';
             $request->fileInputBP->move(public_path('requirements'), $bus);
-            
+            //a
          //   dd($bus); 
             return  back()->with('success','Utilized Information Successfully Updated.');  
          //   return redirect()->route('faculty-rbp-view',$id)->with('success', 'Journal Cited Successfully Updated.');

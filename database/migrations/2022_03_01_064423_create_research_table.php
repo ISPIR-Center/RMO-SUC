@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('leader')->nullable();
             $table->string('leader_id')->nullable();
             $table->string('status')->default('PENDING');
-            $table->string('location_from')->nullable()->default('faculty');//faculty,college,pchair,rmo
+            $table->string('location_from')->nullable()->default('Faculty');//faculty,college,pchair,rmo
             $table->string('location_to')->default('Program Chair');
             $table->char('is_internally_funded', 1)->default('0');
             $table->string('is_presented', 1)->nullable();
